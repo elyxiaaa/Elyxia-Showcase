@@ -709,11 +709,13 @@ useEffect(() => {
               Facebook
             </a>
             <a
-              href="#"
+              href="https://discord.gg/Z4BUsgSsR"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-white/10"
             >
               <FaDiscord size={14} />
-              Discord
+              elyxiaaaa
             </a>
           </div>
         </GlassCard>
