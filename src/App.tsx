@@ -103,7 +103,7 @@ const rfProjects: ShowcaseProject[] = [
   {
     title: "Rising Force Apex",
     image: Apex,
-    live: "https://rf-apex-xi.vercel.app/",
+    live: "https://rf-apex.pages.dev/",
     tag: "Feature-Rich Build",
     description:
       "A feature-heavy RF Online website with leaderboard and guild list integrations, plus a custom gear preview interface for players.",
