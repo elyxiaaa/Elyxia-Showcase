@@ -183,20 +183,23 @@ export const projects: Project[] = [
   },
   {
     id: '09',
-    title: 'Origins Coffee Co.',
+    title: 'Novus Rising Shop',
     industry: 'E-Commerce',
     year: '2025',
     group: 'other',
-    liveUrl: null,
+    liveUrl: 'https://shop.novusrising.net',
     image: null,
     description:
-      'An e-commerce experience for Origins Coffee Co. — currently in development, focused on product presentation and a smooth purchasing flow.',
-    overview: 'E-commerce storefront for Origins Coffee Co. — in development.',
-    challenges: 'Project in progress.',
-    solutions: 'Project in progress.',
-    results: 'Coming soon.',
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Vercel'],
-    isPlaceholder: true,
+      'A Shopify-powered e-commerce storefront for the Novus Rising gaming community — built with a GraphQL data layer and a fully custom React front end.',
+    overview:
+      'Custom-built e-commerce experience for Novus Rising, connecting a React + TypeScript front end to Shopify\'s Storefront API via GraphQL for real-time product and checkout data.',
+    challenges:
+      'Building a storefront that feels native to the gaming brand while integrating Shopify\'s headless checkout flow — avoiding generic Shopify templates entirely.',
+    solutions:
+      'Used Shopify\'s Storefront API with GraphQL to query products, carts, and checkout. Built a fully custom React UI with Tailwind CSS, keeping the brand identity consistent throughout.',
+    results:
+      'Live production storefront at shop.novusrising.net, serving the Novus Rising community with a seamless, on-brand purchase experience.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'GraphQL', 'Shopify Checkout', 'Cloudflare Pages'],
   },
 ];
 
