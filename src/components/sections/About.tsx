@@ -20,7 +20,7 @@ export default function About() {
               applications.
             </p>
             <p className="leading-relaxed text-zinc-400">
-              I focus on performance, responsiveness, and modern UI — building
+              I focus on performance, responsiveness, and modern UI, building
               sites that feel professional whether the audience is players,
               customers, or both.
             </p>

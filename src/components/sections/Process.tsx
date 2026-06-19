@@ -24,7 +24,7 @@ const STEPS = [
     id: '04',
     title: 'Development',
     description:
-      'Building the UI with React and Tailwind CSS — component-first, clean, maintainable code.',
+      'Building the UI with React and Tailwind CSS. Component-first, clean, and maintainable.',
   },
   {
     id: '05',

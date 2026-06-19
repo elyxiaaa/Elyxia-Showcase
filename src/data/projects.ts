@@ -33,7 +33,7 @@ export const projects: Project[] = [
     liveUrl: 'https://www.rfnovusrising.net',
     image: NovusRisingImg,
     description:
-      'A branded RF Online server website built to give the Novus Rising community a professional online presence — immersive, responsive, and production-ready.',
+      'A branded RF Online server website built for the Novus Rising community. Immersive, responsive, and production-ready.',
     overview:
       'Full server website covering landing page, server information, downloads, and community sections.',
     challenges:
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     liveUrl: 'https://www.rfaegis.net',
     image: AegisImg,
     description:
-      'A game platform website with real-time leaderboard and player data — designed to make community rankings feel engaging and easy to navigate.',
+      'A game platform website with real-time leaderboard and player data, designed to make community rankings feel engaging and easy to navigate.',
     overview:
       'Server website with API-integrated leaderboard, player rankings, and interactive community sections.',
     challenges:
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     description:
       'A feature-rich RF Online server site with integrated leaderboard, guild list, and a custom gear preview interface for players.',
     overview:
-      'Full-featured server website including leaderboard, guild list, and a dedicated gear preview UI — all in one cohesive front end.',
+      'Full-featured server website including leaderboard, guild list, and a dedicated gear preview UI, all in one cohesive front end.',
     challenges:
       'Implementing multiple interactive features in a single UI that stays cohesive and easy to navigate.',
     solutions:
@@ -113,8 +113,8 @@ export const projects: Project[] = [
     liveUrl: null,
     image: null,
     description:
-      'A branded Ran Online server website currently in development — designed to match the visual identity and community needs of the Novus Rising server.',
-    overview: 'Full server website for Ran Novus Rising — in development.',
+      'A branded Ran Online server website currently in development, designed to match the visual identity and community needs of the Novus Rising server.',
+    overview: 'Full server website for Ran Novus Rising, currently in development.',
     challenges: 'Project in progress.',
     solutions: 'Project in progress.',
     results: 'Coming soon.',
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     liveUrl: 'https://ultimates-trading.pages.dev',
     image: UltimatesImg,
     description:
-      'A professional business website for Ultimates Construction Materials Trading — built to present products and services clearly to potential clients.',
+      'A professional business website for Ultimates Construction Materials Trading, built to present products and services clearly to potential clients.',
     overview:
       'Company website covering products, services, and contact information in a professional, client-facing layout.',
     challenges:
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     overview:
       'Full-featured blog web application with content listing, reading view, and a component-first architecture.',
     challenges:
-      'Blog UIs need to balance content density with readability — getting typography, spacing, and structure right for long-form reading.',
+      'Blog UIs need to balance content density with readability. Getting typography, spacing, and structure right for long-form reading.',
     solutions:
       'Built with a content-first design system: clean type scale, appropriate line lengths, logical content hierarchy, and reusable layout components.',
     results:
@@ -172,7 +172,7 @@ export const projects: Project[] = [
     description:
       'A private client website built to serve a specific business audience with a professional, branded online presence.',
     overview:
-      "Business website delivered for a private client — responsive, performant, and tailored to the client's brand requirements.",
+      "Business website delivered for a private client. Responsive, performant, and tailored to the client's brand requirements.",
     challenges:
       "Translating the client's brand requirements into a web experience that feels appropriate for their audience while remaining fast and responsive.",
     solutions:
@@ -190,13 +190,13 @@ export const projects: Project[] = [
     liveUrl: 'https://shop.novusrising.net',
     image: null,
     description:
-      'A Shopify-powered e-commerce storefront for the Novus Rising gaming community — built with a GraphQL data layer and a fully custom React front end.',
+      'A Shopify-powered e-commerce storefront for the Novus Rising gaming community, built with a GraphQL data layer and a fully custom React front end.',
     overview:
-      'Custom-built e-commerce experience for Novus Rising, connecting a React + TypeScript front end to Shopify\'s Storefront API via GraphQL for real-time product and checkout data.',
+      "Custom-built e-commerce experience for Novus Rising, connecting a React + TypeScript front end to Shopify's Storefront API via GraphQL for real-time product and checkout data.",
     challenges:
-      'Building a storefront that feels native to the gaming brand while integrating Shopify\'s headless checkout flow — avoiding generic Shopify templates entirely.',
+      "Building a storefront that feels native to the gaming brand while integrating Shopify's headless checkout flow, without relying on generic Shopify templates.",
     solutions:
-      'Used Shopify\'s Storefront API with GraphQL to query products, carts, and checkout. Built a fully custom React UI with Tailwind CSS, keeping the brand identity consistent throughout.',
+      "Used Shopify's Storefront API with GraphQL to query products, carts, and checkout. Built a fully custom React UI with Tailwind CSS, keeping the brand identity consistent throughout.",
     results:
       'Live production storefront at shop.novusrising.net, serving the Novus Rising community with a seamless, on-brand purchase experience.',
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'GraphQL', 'Shopify Checkout', 'Cloudflare Pages'],
