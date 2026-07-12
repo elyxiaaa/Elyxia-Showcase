@@ -1,5 +1,4 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
-import { SectionLabel } from '../ui/SectionLabel';
 
 export default function About() {
   const ref = useScrollReveal<HTMLDivElement>();
@@ -8,9 +7,8 @@ export default function About() {
     <section id="about" className="scroll-mt-20 border-b border-zinc-800">
       <div className="mx-auto max-w-screen-xl px-6 py-24 md:px-10 lg:px-16 lg:py-32">
         <div className="max-w-2xl">
-          <SectionLabel>About</SectionLabel>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-white lg:text-5xl">
-            Elyxia
+          <h2 className="text-4xl font-bold tracking-tight text-white lg:text-5xl">
+            Behind the work.
           </h2>
 
           <div ref={ref} className="reveal mt-8 space-y-4">

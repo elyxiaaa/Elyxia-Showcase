@@ -5,6 +5,8 @@ import ApexImg from '../assets/projects/Apex.webp';
 import UltimatesImg from '../assets/projects/Ultimates.webp';
 import BlogAppImg from '../assets/projects/BlogApp.webp';
 import JJMImg from '../assets/projects/JJM.webp';
+import RanNovusRisingImg from '../assets/projects/RanNovusRising.webp';
+import NovusRisingEcommerceImg from '../assets/projects/NovusRisingEcommerce.webp';
 
 export type Project = {
   id: string;
@@ -26,29 +28,49 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: '01',
-    title: 'RF Novus Rising',
+    title: 'Ran Novus Rising',
     industry: 'MMORPG',
-    year: '2024',
+    year: '2026',
     group: 'gaming',
-    liveUrl: 'https://www.rfnovusrising.net',
-    image: NovusRisingImg,
+    liveUrl: 'https://ran.novusrising.net',
+    image: RanNovusRisingImg,
     description:
-      'A branded RF Online server website built for the Novus Rising community. Immersive, responsive, and production-ready.',
+      'A branded Ran Online server website built for the Novus Rising community. Immersive, responsive, and designed to match the identity of a new server launch.',
     overview:
-      'Full server website covering landing page, server information, downloads, and community sections.',
+      'Full server website for Ran Novus Rising, covering landing page, server information, and community sections.',
     challenges:
-      "RF server sites often rely on outdated templates disconnected from the game's visual identity. The goal was modern without looking generic.",
+      'Launching a Ran Online site that feels fresh and on-brand for the Novus Rising name, while meeting the expectations of a competitive private server community.',
     solutions:
-      'Component-first React architecture with a Tailwind CSS design system tuned to the server branding. Clear section hierarchy, responsive breakpoints throughout.',
+      'Component-first React architecture with a Tailwind CSS design system tuned to the server branding. Responsive breakpoints and clear section hierarchy throughout.',
     results:
-      'Live production site serving the RF Novus Rising community across desktop and mobile.',
+      'Live production site at ran.novusrising.net serving the Ran Novus Rising community across desktop and mobile.',
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'Cloudflare Pages'],
   },
   {
     id: '02',
+    title: 'RF Novus Rising',
+    industry: 'MMORPG',
+    year: '2026',
+    group: 'gaming',
+    liveUrl: 'https://www.rfnovusrising.net',
+    image: NovusRisingImg,
+    description:
+      'A branded RF Online server website powered by a live API, surfacing real-time server status, total online players, and a real-time player kill feed straight from the game database.',
+    overview:
+      'Full server website with a live data layer covering server status, total player count, and real-time player kills, alongside the landing page, server information, downloads, and community sections.',
+    challenges:
+      'Pulling live server status, player counts, and kill data from the game database and presenting it in real time, without the UI feeling slow or cluttered as numbers update.',
+    solutions:
+      'Connected the front end to an API-backed database and built React components that poll and render live server status, total players, and the player kill feed, all tuned to the server branding with Tailwind CSS.',
+    results:
+      'Live production site serving the RF Novus Rising community with real-time server and player data across desktop and mobile.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'REST API', 'Cloudflare Pages'],
+  },
+  {
+    id: '03',
     title: 'RF Aegis',
     industry: 'MMORPG',
-    year: '2024',
+    year: '2025',
     group: 'gaming',
     liveUrl: 'https://www.rfaegis.net',
     image: AegisImg,
@@ -65,10 +87,10 @@ export const projects: Project[] = [
     stack: ['React', 'JavaScript', 'Tailwind CSS', 'Cloudflare Pages'],
   },
   {
-    id: '03',
+    id: '04',
     title: 'RF Phoenix',
     industry: 'MMORPG',
-    year: '2024',
+    year: '2026',
     group: 'gaming',
     liveUrl: 'https://rfphoenix.net',
     image: PhoenixImg,
@@ -85,7 +107,7 @@ export const projects: Project[] = [
     stack: ['React', 'JavaScript', 'Tailwind CSS', 'Cloudflare Pages'],
   },
   {
-    id: '04',
+    id: '05',
     title: 'RF Apex',
     industry: 'MMORPG',
     year: '2024',
@@ -105,24 +127,27 @@ export const projects: Project[] = [
     stack: ['React', 'JavaScript', 'Tailwind CSS'],
   },
   {
-    id: '05',
-    title: 'Ran Novus Rising',
-    industry: 'MMORPG',
+    id: '06',
+    title: 'Novus Rising Shop',
+    industry: 'E-Commerce',
     year: '2026',
-    group: 'gaming',
-    liveUrl: null,
-    image: null,
+    group: 'other',
+    liveUrl: 'https://shop.novusrising.net',
+    image: NovusRisingEcommerceImg,
     description:
-      'A branded Ran Online server website currently in development, designed to match the visual identity and community needs of the Novus Rising server.',
-    overview: 'Full server website for Ran Novus Rising, currently in development.',
-    challenges: 'Project in progress.',
-    solutions: 'Project in progress.',
-    results: 'Coming soon.',
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Cloudflare Pages'],
-    isPlaceholder: true,
+      'A Shopify-powered e-commerce storefront for the Novus Rising gaming community, built with a GraphQL data layer and a fully custom React front end.',
+    overview:
+      "Custom-built e-commerce experience for Novus Rising, connecting a React + TypeScript front end to Shopify's Storefront API via GraphQL for real-time product and checkout data.",
+    challenges:
+      "Building a storefront that feels native to the gaming brand while integrating Shopify's headless checkout flow, without relying on generic Shopify templates.",
+    solutions:
+      "Used Shopify's Storefront API with GraphQL to query products, carts, and checkout. Built a fully custom React UI with Tailwind CSS, keeping the brand identity consistent throughout.",
+    results:
+      'Live production storefront at shop.novusrising.net, serving the Novus Rising community with a seamless, on-brand purchase experience.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'GraphQL', 'Shopify Checkout', 'Cloudflare Pages'],
   },
   {
-    id: '06',
+    id: '07',
     title: 'Ultimates Construction Materials Trading',
     industry: 'Business',
     year: '2024',
@@ -142,7 +167,7 @@ export const projects: Project[] = [
     stack: ['React', 'JavaScript', 'Tailwind CSS', 'Cloudflare Pages'],
   },
   {
-    id: '07',
+    id: '08',
     title: 'Blog App',
     industry: 'Web Application',
     year: '2024',
@@ -162,7 +187,7 @@ export const projects: Project[] = [
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
   },
   {
-    id: '08',
+    id: '09',
     title: 'JJM',
     industry: 'Business',
     year: '2024',
@@ -180,26 +205,6 @@ export const projects: Project[] = [
     results:
       'Successfully delivered and live in production. Client details are confidential.',
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'Cloudflare Pages'],
-  },
-  {
-    id: '09',
-    title: 'Novus Rising Shop',
-    industry: 'E-Commerce',
-    year: '2026',
-    group: 'other',
-    liveUrl: 'https://shop.novusrising.net',
-    image: null,
-    description:
-      'A Shopify-powered e-commerce storefront for the Novus Rising gaming community, built with a GraphQL data layer and a fully custom React front end.',
-    overview:
-      "Custom-built e-commerce experience for Novus Rising, connecting a React + TypeScript front end to Shopify's Storefront API via GraphQL for real-time product and checkout data.",
-    challenges:
-      "Building a storefront that feels native to the gaming brand while integrating Shopify's headless checkout flow, without relying on generic Shopify templates.",
-    solutions:
-      "Used Shopify's Storefront API with GraphQL to query products, carts, and checkout. Built a fully custom React UI with Tailwind CSS, keeping the brand identity consistent throughout.",
-    results:
-      'Live production storefront at shop.novusrising.net, serving the Novus Rising community with a seamless, on-brand purchase experience.',
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'GraphQL', 'Shopify Checkout', 'Cloudflare Pages'],
   },
 ];
 

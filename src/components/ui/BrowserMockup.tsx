@@ -26,7 +26,7 @@ export function BrowserMockup({
       <img
         src={image}
         alt={alt}
-        className="w-full object-cover"
+        className="aspect-[16/10] w-full object-cover object-top"
         loading={imageLoading}
       />
     </div>

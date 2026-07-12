@@ -1,5 +1,4 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
-import { SectionLabel } from '../ui/SectionLabel';
 
 const STEPS = [
   {
@@ -46,16 +45,19 @@ export default function Process() {
   return (
     <section id="process" className="scroll-mt-20 border-b border-zinc-800">
       <div className="mx-auto max-w-screen-xl px-6 py-24 md:px-10 lg:px-16 lg:py-32">
-        <div className="mb-16">
-          <SectionLabel>Process</SectionLabel>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-white lg:text-5xl">
+        <div className="mb-16 max-w-2xl">
+          <h2 className="text-4xl font-bold tracking-tight text-white lg:text-5xl">
             How I work.
           </h2>
+          <p className="mt-4 text-lg leading-relaxed text-zinc-400">
+            The same six steps on every project, whether it is a game server
+            launch or a storefront.
+          </p>
         </div>
 
         <div
           ref={ref}
-          className="reveal grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-zinc-800 bg-zinc-800 sm:grid-cols-2 lg:grid-cols-3"
+          className="reveal-stagger grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-zinc-800 bg-zinc-800 sm:grid-cols-2 lg:grid-cols-3"
         >
           {STEPS.map((step) => (
             <div

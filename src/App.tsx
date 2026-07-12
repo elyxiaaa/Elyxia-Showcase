@@ -6,7 +6,6 @@ import FeaturedProjects from './components/sections/FeaturedProjects';
 import Process from './components/sections/Process';
 import TechStack from './components/sections/TechStack';
 import Services from './components/sections/Services';
-import Testimonials from './components/sections/Testimonials';
 import About from './components/sections/About';
 import Contact from './components/sections/Contact';
 
@@ -21,7 +20,6 @@ export default function App() {
         <Process />
         <TechStack />
         <Services />
-        <Testimonials />
         <About />
         <Contact />
       </main>

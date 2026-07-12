@@ -46,7 +46,6 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-screen-xl items-center justify-between px-6 py-4 md:px-10 lg:px-16">
-        {/* Wordmark */}
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -55,16 +54,16 @@ export default function Navbar() {
           Elyxia
         </button>
 
-        {/* Desktop nav */}
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
           {NAV_LINKS.map((link) => (
             <button
               key={link.id}
               type="button"
               onClick={() => scrollToId(link.id)}
+              aria-current={activeSection === link.id ? 'true' : undefined}
               className={`rounded-lg px-4 py-2 text-sm transition-colors ${
                 activeSection === link.id
-                  ? 'text-white'
+                  ? 'bg-zinc-900 text-white'
                   : 'text-zinc-400 hover:text-white'
               }`}
             >
@@ -73,7 +72,6 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Desktop CTA */}
         <button
           type="button"
           onClick={() => scrollToId('contact')}
@@ -82,18 +80,17 @@ export default function Navbar() {
           Contact
         </button>
 
-        {/* Mobile hamburger */}
         <button
           type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
-          className="text-zinc-400 transition-colors hover:text-white md:hidden"
+          className="-m-3 p-3 text-zinc-400 transition-colors hover:text-white md:hidden"
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
-          {menuOpen ? <FaTimes size={18} /> : <FaBars size={18} />}
+          {menuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
         </button>
       </div>
 
-      {/* Mobile drawer */}
       <div
         className={`overflow-hidden border-t border-zinc-800 bg-zinc-950 transition-all duration-300 md:hidden ${
           menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'

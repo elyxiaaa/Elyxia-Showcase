@@ -1,8 +1,8 @@
 const STATS = [
   { value: '3+', label: 'Years of Experience' },
-  { value: '7+', label: 'Projects Completed' },
-  { value: '5', label: 'Technologies Used' },
-  { value: '7+', label: 'Websites Launched' },
+  { value: '9', label: 'Projects Shipped' },
+  { value: '8', label: 'Sites Live in Production' },
+  { value: '5', label: 'Gaming Communities Served' },
 ] as const;
 
 export default function TrustStats() {

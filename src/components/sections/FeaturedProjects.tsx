@@ -24,26 +24,26 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
           <span className="text-xs uppercase tracking-widest text-zinc-500">
             {project.industry}
           </span>
-          <span className="text-xs text-zinc-600">{project.year}</span>
+          <span className="text-xs text-zinc-500">{project.year}</span>
         </div>
       </div>
 
       <p className="leading-relaxed text-zinc-400">{project.description}</p>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
         {DETAILS.map(({ key, label }) => (
-          <div key={key} className="border-l-2 border-zinc-800 pl-3">
-            <p className="text-xs font-semibold uppercase tracking-widest text-zinc-600">
+          <div key={key} className="border-t border-zinc-800 pt-3">
+            <p className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
               {label}
             </p>
-            <p className="mt-1 text-sm leading-relaxed text-zinc-400">
+            <p className="mt-1.5 text-sm leading-relaxed text-zinc-400">
               {project[key as DetailKey]}
             </p>
           </div>
         ))}
       </div>
 
-      <p className="mt-6 text-sm text-zinc-600">{project.stack.join(' · ')}</p>
+      <p className="mt-6 text-sm text-zinc-500">{project.stack.join(' · ')}</p>
 
       {project.liveUrl && (
         <a
@@ -65,8 +65,8 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
         <div className="overflow-hidden rounded-xl border border-zinc-800">
           <img
             src={project.image}
-            alt={project.title}
-            className="w-full object-cover"
+            alt={`${project.title} website screenshot`}
+            className="aspect-[16/10] w-full object-cover object-top"
             loading="lazy"
           />
         </div>
@@ -108,14 +108,16 @@ export default function FeaturedProjects() {
   return (
     <section id="projects" className="scroll-mt-20 border-b border-zinc-800">
       <div className="mx-auto max-w-screen-xl px-6 py-24 md:px-10 lg:px-16 lg:py-32">
-        <div className="mb-16">
-          <SectionLabel>Work</SectionLabel>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-white lg:text-5xl">
+        <div className="mb-16 max-w-2xl">
+          <h2 className="text-4xl font-bold tracking-tight text-white lg:text-5xl">
             Projects that shipped.
           </h2>
+          <p className="mt-4 text-lg leading-relaxed text-zinc-400">
+            Nine projects across gaming, e-commerce, and business. Most are
+            live in production right now.
+          </p>
         </div>
 
-        {/* Gaming group */}
         <div className="mb-8">
           <SectionLabel>Gaming &amp; MMORPG</SectionLabel>
         </div>
@@ -123,7 +125,6 @@ export default function FeaturedProjects() {
           <ProjectRow key={project.id} project={project} index={i} />
         ))}
 
-        {/* Other work group */}
         <div className="mb-8 mt-24 border-t border-zinc-800 pt-24">
           <SectionLabel>Other Work</SectionLabel>
         </div>
